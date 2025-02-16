@@ -16,7 +16,7 @@ Der findes **tre testmetoder**:
 ### Eksempel
 En test af et **login-system** kan være:
 - **Sort box test**: Tester login med korrekte/ukorrekte oplysninger.  
-- **Hvid box test**: Tjekker, om kodeord hash’es korrekt.  
+- **Hvid box test**: Vi tester login ved at kigge direkte på koden, f.eks. hvordan SQL-forespørgslen håndteres.  
 - **Grå box test**: Tester login-API’en uden at kende hele systemets backend.  
 
 ---
