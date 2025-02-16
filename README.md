@@ -17,10 +17,10 @@ Der findes **tre testmetoder**:
 En test af et **login-system** kan være:
 - **Sort box test**: Tester login med korrekte/ukorrekte oplysninger.  
 - **Hvid box test**: Vi tester login ved at kigge direkte på koden, f.eks. hvordan SQL-forespørgslen håndteres.  
-- **Grå box test**: Tester login-API’en uden at kende hele systemets backend.  
+- **Grå box test**: Tester mysql-kommandoerne direkte i phpmyadmin.  
 
 ---
-
+Vi kan teste koden ved hvis box test ved brug af f.x unittest og doctest.
 # 2. `unittest` – Struktureret testning 
 ### Hvad er `unittest`?
 - Et indbygget test-framework i Python.  
