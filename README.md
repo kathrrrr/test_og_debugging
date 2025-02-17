@@ -231,7 +231,9 @@ print(divide(10, 0))
 - Et **stop-punkt i koden**, hvor vi kan inspicere værdier.  
 - Bruges i **VS Code**, eller med `pdb` i terminalen.  
 
+
 ### **Brug af `pdb` til debugging**
+pdb står for python debugger.
 ```python
 import pdb
 
