@@ -244,6 +244,24 @@ def faulty_function(x):
 
 faulty_function(5)
 ```
+Når set_trace() bliver kaldt åbnes en særlig konsol.
+
+**De vigtigeste i pdb-konsollen**
+
+
+## **De vigtigste `pdb`-kommandoer**
+| **Kommando** | **Forklaring** | **Eksempel** |
+|-------------|--------------|------------|
+| `h` / `help` | Viser en liste over kommandoer | `(Pdb) help` |
+| `p var` | Udskriver værdien af `var` | `(Pdb) p x` |
+| `pp var` | "Pretty prints" værdien af `var` (bruges til komplekse objekter) | `(Pdb) pp my_list` |
+| `n` (next) | Udfører **næste linje kode** uden at gå ind i funktioner | `(Pdb) n` |
+| `s` (step) | Går **ind i en funktion** for at debugge den | `(Pdb) s` |
+| `c` (continue) | Fortsætter koden, indtil næste breakpoint | `(Pdb) c` |
+| `l` (list) | Viser de næste 10 linjer kode | `(Pdb) l` |
+| `q` (quit) | Afslutter debuggeren og stopper programmet | `(Pdb) q` |
+
+
 ### Øvelse 3: Debugging med breakpoints
 1. Indsæt et breakpoint i en funktion.  
 2. Kør koden og inspicér variablerne.  
