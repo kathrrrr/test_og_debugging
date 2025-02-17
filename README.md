@@ -5,7 +5,7 @@
 
 ---
 # 1. Introduktion til Softwaretest
-## Hvad er softwaretestning?
+## Hvad er softwaretest?
 Softwaretest sikrer, at vores kode fungerer korrekt og håndterer fejl på en kontrolleret måde.  
 
 Der findes **tre testmetoder**:  
