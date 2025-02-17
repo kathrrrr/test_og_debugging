@@ -9,18 +9,18 @@
 Softwaretest sikrer, at vores kode fungerer korrekt og håndterer fejl på en kontrolleret måde.  
 
 Der findes **tre testmetoder**:  
-**Sort box test** – Test af **funktionalitet** uden at kende den interne kode.  
-**Hvid box test** – Test af **kode og struktur** for at finde fejl.  
-**Grå box test** – En blanding af de to; tester både funktionalitet og noget af koden.  
+**Black box test** – Test af **funktionalitet** uden at kende den interne kode.  
+**White box test** – Test af **kode og struktur** for at finde fejl.  
+**Grey box test** – En blanding af de to; tester både funktionalitet og noget af koden.  
 
 ### Eksempel
 En test af et **login-system** kan være:
-- **Sort box test**: Tester login med korrekte/ukorrekte oplysninger.  
-- **Hvid box test**: Vi tester login ved at kigge direkte på koden, f.eks. hvordan SQL-forespørgslen håndteres.  
-- **Grå box test**: Tester mysql-kommandoerne direkte i phpmyadmin.  
+- **Black box test**: Tester login med korrekte/ukorrekte oplysninger.  
+- **White box test**: Vi tester login ved at kigge direkte på koden, f.eks. hvordan SQL-forespørgslen håndteres.  
+- **Grey box test**: Tester mysql-kommandoerne direkte i phpmyadmin.  
 
 ---
-Sort box test dokumenteres i et skema. Her ses et skema for Sort Box Test for Login-system
+Black box test dokumenteres i et skema. Her ses et skema for Sort Box Test for Login-system
 
 | **Test ID** | **Input (Brugernavn, Kodeord)** | **Forventet Output** | **Faktisk Output** | **Bestået?** |
 |------------|-------------------------------|----------------------|--------------------|-------------|
@@ -30,7 +30,7 @@ Sort box test dokumenteres i et skema. Her ses et skema for Sort Box Test for Lo
 | **T4** | `"" , ""` (Tom input) | "Invalid username or password" | "Invalid username or password" | Ja |
 
 ---
-Vi kan teste koden ved hvid box test ved brug af f.x unittest og doctest.
+Vi kan teste koden ved white box test ved brug af f.x unittest og doctest.
 # 2. `unittest` – Struktureret testning 
 ### Hvad er `unittest`?
 - Et indbygget test-framework i Python.  
@@ -255,7 +255,7 @@ faulty_function(5)
 
 ## **Logbog: **
 Skriv i logbog om hvad du lærte om
-**Sort, hvid og grå box test**   
+**black box, Grey box, White box test**   
 **`unittest`** 
 **`doctest`** 
 **Breakpoints** 
