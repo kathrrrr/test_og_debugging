@@ -255,7 +255,7 @@ faulty_function(5)
 
 ## **Logbog: **
 Skriv i logbog om hvad du lærte om
-**black box, Grey box, White box test**   
+**black box, grey box, white box test**   
 **`unittest`** 
 **`doctest`** 
 **Breakpoints** 
