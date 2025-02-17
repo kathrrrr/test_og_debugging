@@ -103,27 +103,77 @@ if __name__ == "__main__":
 
 ---
 
-# 4. Debugging med Breakpoints 
-### Hvad er et breakpoint?
-- Et **stop-punkt i koden**, hvor vi kan inspicere værdier.  
-- Bruges i **VS Code**, eller med `pdb` i terminalen.  
+# 4. Debugging med `print()`  
 
-### **Brug af `pdb` til debugging**
-```python
-import pdb
+## Hvad er debugging med `print()`?
+En af de **mest grundlæggende metoder** til at debugge kode er at indsætte `print()`-kommandoer for at **se, hvad der sker i programmet**.
 
-def faulty_function(x):
-    pdb.set_trace()  # Sætter breakpoint
-    result = x + "10"  # Fejl: int + str
-    return result
+**Fordele ved `print()` debugging:  
+✔ Enkel og hurtig at bruge.  
+✔ Kræver ingen ekstra værktøjer.  
+✔ Kan bruges overalt i koden.  
 
-faulty_function(5)
-```
-### Øvelse 3: Debugging med breakpoints
-1. Indsæt et breakpoint i en funktion.  
-2. Kør koden og inspicér variablerne.  
+**Ulemper ved `print()` debugging:**  
+✖ Bliver hurtigt rodet i større projekter.  
+✖ Kræver manuel fjernelse af `print()` efter debugging.  
+✖ Giver ingen avanceret fejlhåndtering.  
 
 ---
+
+## Eksempel: Debugging med `print()`
+Lad os sige, vi har en funktion, der dividerer to tal, men den fejler nogle gange:
+
+```python
+def divide(a, b):
+    print(f"DEBUG: a = {a}, b = {b}")  # Debug print
+    return a / b
+
+print(divide(10, 2))  # OK
+print(divide(10, 0))  # Fejl! Division med nul
+```
+**Output:**
+```
+DEBUG: a = 10, b = 2
+5.0
+DEBUG: a = 10, b = 0
+ZeroDivisionError: division by zero
+```
+**Her bruger vi `print()` til at se værdierne af `a` og `b`, inden fejlen opstår.**
+
+---
+
+## **Øvelse: Find en fejl med `print()`**
+**Fejlen:** Følgende funktion giver ikke det forventede resultat.  
+**Din opgave:** Brug `print()` til at finde fejlen.  
+
+```python
+def calculate_total(prices):
+    total = 0
+    for price in prices:
+        total = price  # Fejl! Skal være total += price
+    return total
+
+print(calculate_total([10, 20, 30]))  # Forventet: 60, men hvad returneres?
+```
+**Tilføj `print()` i funktionen for at se, hvordan `total` ændrer sig!**  
+
+---
+
+## Hvornår bør man bruge `print()` debugging?
+Hurtige fejlfindingssessioner.  
+Når du tester en **mindre funktion**.  
+Når du arbejder i et **simpelt script** uden debugging-værktøjer.  
+
+**Men:** I større projekter er **logging og breakpoints bedre** til systematisk debugging!  
+
+---
+
+**Nu ser vi, hvordan breakpoints kan gøre debugging mere effektiv!** 
+
+
+---
+
+
 
 # 5. Debugging med Logging 
 ### Hvad er logging?
@@ -161,7 +211,27 @@ print(divide(10, 0))
 2. Brug `logging` til at logge kald, fejl og resultater.  
 
 ---
+# 6. Debugging med Breakpoints 
+### Hvad er et breakpoint?
+- Et **stop-punkt i koden**, hvor vi kan inspicere værdier.  
+- Bruges i **VS Code**, eller med `pdb` i terminalen.  
 
+### **Brug af `pdb` til debugging**
+```python
+import pdb
+
+def faulty_function(x):
+    pdb.set_trace()  # Sætter breakpoint
+    result = x + "10"  # Fejl: int + str
+    return result
+
+faulty_function(5)
+```
+### Øvelse 3: Debugging med breakpoints
+1. Indsæt et breakpoint i en funktion.  
+2. Kør koden og inspicér variablerne.  
+
+---
 
 
 ---
