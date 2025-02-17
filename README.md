@@ -75,9 +75,6 @@ def add(x, y):
     """
     return x + y
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
 ```
 
 Her kan vi i docstringen indsætte test
