@@ -31,7 +31,7 @@ Black box test dokumenteres i et skema. Her ses et skema for Sort Box Test for L
 
 ---
 Vi kan teste koden ved white box test ved brug af f.x unittest og doctest.
-# 2. `unittest` – Struktureret testning 
+# 2. `unittest` – Struktureret test 
 ### Hvad er `unittest`?
 - Et indbygget test-framework i Python.  
 - Giver struktureret testning med testklasser og assertions.  
