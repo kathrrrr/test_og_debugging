@@ -66,6 +66,22 @@ if __name__ == "__main__":
 - Bruges til **hurtige tests** og til at sikre, at dokumentation er korrekt.  
 
 ### Eksempel
+Betragt denne kode
+```python
+def add(x, y):
+    """
+    Returnerer summen af x og y.
+    
+    """
+    return x + y
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+```
+
+Her kan vi i docstringen indsætte test
+
 ```python
 def add(x, y):
     """
