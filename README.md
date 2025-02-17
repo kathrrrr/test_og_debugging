@@ -20,7 +20,7 @@ En test af et **login-system** kan være:
 - **Grå box test**: Tester mysql-kommandoerne direkte i phpmyadmin.  
 
 ---
-Vi kan teste koden ved hvis box test ved brug af f.x unittest og doctest.
+Vi kan teste koden ved hvid box test ved brug af f.x unittest og doctest.
 # 2. `unittest` – Struktureret testning 
 ### Hvad er `unittest`?
 - Et indbygget test-framework i Python.  
