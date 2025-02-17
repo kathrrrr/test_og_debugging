@@ -108,15 +108,15 @@ if __name__ == "__main__":
 ## Hvad er debugging med `print()`?
 En af de **mest grundlæggende metoder** til at debugge kode er at indsætte `print()`-kommandoer for at **se, hvad der sker i programmet**.
 
-**Fordele ved `print()` debugging:  
-✔ Enkel og hurtig at bruge.  
-✔ Kræver ingen ekstra værktøjer.  
-✔ Kan bruges overalt i koden.  
+**Fordele ved `print()` debugging:**  
+Enkel og hurtig at bruge.  
+Kræver ingen ekstra værktøjer.  
+Kan bruges overalt i koden.  
 
 **Ulemper ved `print()` debugging:**  
-✖ Bliver hurtigt rodet i større projekter.  
-✖ Kræver manuel fjernelse af `print()` efter debugging.  
-✖ Giver ingen avanceret fejlhåndtering.  
+Bliver hurtigt rodet i større projekter.  
+Kræver manuel fjernelse af `print()` efter debugging.  
+Giver ingen avanceret fejlhåndtering.  
 
 ---
 
