@@ -20,6 +20,16 @@ En test af et **login-system** kan være:
 - **Grå box test**: Tester mysql-kommandoerne direkte i phpmyadmin.  
 
 ---
+Sort box test dokumenteres i et skema. Her ses et skema for Sort Box Test for Login-system
+
+| **Test ID** | **Input (Brugernavn, Kodeord)** | **Forventet Output** | **Faktisk Output** | **Bestået?** |
+|------------|-------------------------------|----------------------|--------------------|-------------|
+| **T1** | `"admin", "1234"` | "Login successful" | "Login successful" | Ja |
+| **T2** | `"admin", "wrongpass"` | "Invalid username or password" | "Invalid username or password" | Ja |
+| **T3** | `"nonexistent", "password"` | "Invalid username or password" | "Invalid username or password" | Ja ||
+| **T4** | `"" , ""` (Tom input) | "Invalid username or password" | "Invalid username or password" | Ja |
+
+---
 Vi kan teste koden ved hvid box test ved brug af f.x unittest og doctest.
 # 2. `unittest` – Struktureret testning 
 ### Hvad er `unittest`?
