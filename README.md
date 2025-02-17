@@ -196,7 +196,22 @@ def divide(a, b):
 print(divide(10, 2))
 print(divide(10, 0))
 ```
+### Eksempel på logging i en fil
+```python
+import logging
 
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+
+def divide(a, b):
+    logging.debug(f"divide({a}, {b}) called")
+    if b == 0:
+        logging.error("Division by zero!")
+        return None
+    return a / b
+
+print(divide(10, 2))
+print(divide(10, 0))
+```
 ### **Logging niveauer**
 | Niveau  | Beskrivelse |
 |---------|------------|
